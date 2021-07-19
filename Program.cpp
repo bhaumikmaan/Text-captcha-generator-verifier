@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-
+// Checks If Captcha entered by the user matches the Captcha generated
 bool VerifyCaptcha(string GeneratedCaptcha , string UserCaptcha)
 {
 	if(GeneratedCaptcha == UserCaptcha)
@@ -11,6 +11,7 @@ bool VerifyCaptcha(string GeneratedCaptcha , string UserCaptcha)
 	return false ;
 }
 
+// Captcha Generator
 string GenerateCaptcha(int n)
 {
 	string GeneratedCaptcha = "" ;
@@ -23,6 +24,7 @@ string GenerateCaptcha(int n)
 	return GeneratedCaptcha ;
 }
 
+// Checks if user wants to retry entering the captcha after a failed attempt
 int RetryCheck(char retry)
 {
 	if(retry == 'Y' || retry == 'y')
@@ -39,6 +41,7 @@ int RetryCheck(char retry)
 	}
 }
 
+// Runs to check if the user enters the correct captcha on the second time and bars them if they fail
 void RetryChance( )
 {
 	string GeneratedCaptcha = GenerateCaptcha(9) ;
@@ -62,6 +65,7 @@ void RetryChance( )
    	}
 }
 
+// Asks user if they want to try again
 void Retry( )
 {
     cout << "\n" << "Want to Try Again? (Y/N) \n" ;
@@ -84,6 +88,7 @@ void Retry( )
    	}
 }
 
+// Runs to check if the user enters the correct captcha
 void DriverCode( )
 {
     string GeneratedCaptcha = GenerateCaptcha(9) ;
