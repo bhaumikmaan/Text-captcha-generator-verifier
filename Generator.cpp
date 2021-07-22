@@ -1,3 +1,4 @@
+/***		KNOWLEDGE IS POWER		***/
 string GenerateCaptcha(int n)
 {
 	string GeneratedCaptcha = "" ;
