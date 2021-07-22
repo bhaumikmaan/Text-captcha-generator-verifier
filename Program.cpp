@@ -1,3 +1,4 @@
+/***		KNOWLEDGE IS POWER		***/
 #include<bits/stdc++.h>
 using namespace std ;
 
